@@ -1,0 +1,141 @@
+* {
+    font-family: 'Space Mono', monospace;
+}
+
+.label-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 4rem;
+}
+
+.label-title {
+    font-weight: 600;
+    line-height: 4rem;
+    font-size: 3rem;
+}
+
+.label-description {
+    line-height: 1.8rem;
+    width: 70%;
+    font-size: 1rem;
+}
+
+.primary-button {
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    background-color: #34373a;
+    font-size: 14px;
+}
+
+.menu-options {
+    display: flex;
+}
+
+.menu-option {
+    margin-left: 10px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.navbar {
+    padding: 1rem 3rem !important;
+}
+
+.navbar-brand {
+    font-weight: 600 !important;
+    word-spacing: -8px !important;
+}
+
+@media (min-width: 1200px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1260px !important;
+    }
+}
+
+#zero {
+    animation: bikeTwo 1s ease-in-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#basicFourOne, #basicFourTwo{
+    animation: bike 1s ease-in-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#basic-content{
+    animation: bikeTwo 2s ease-in-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes wheel {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes bike {
+    from {
+        transform: translateY(0%);
+    }
+    to {
+        transform: translateY(-3%);
+    }
+}
+
+@keyframes bikeTwo {
+    from {
+        transform: rotateZ(-3deg);
+    }
+    to {
+        transform: rotateZ(3deg);
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .label-content {
+        padding: 3rem 12px;
+    }
+
+    .label-description {
+        width: 100%;
+    }
+
+    .navbar {
+        padding: 1rem 1rem !important;
+    }
+
+    .primary-button {
+        width: 100%;
+    }
+
+    .navbar-toggler {
+        padding: 3px 7px;
+    }
+
+    .navbar-toggler-icon {
+        width: 1.2em;
+        height: 1.2em;
+    }
+
+    .label-title {
+        font-weight: 600;
+        line-height: 3rem;
+        font-size: 2rem;
+    }
+
+    object {
+        width: 88% !important;
+        margin-top: 2rem !important;
+    }
+}
